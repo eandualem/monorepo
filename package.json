@@ -5,24 +5,17 @@
   "author": "eandualem <eandualem@gmail.com>",
   "homepage": "https://github.com/eandualem/monorepo#readme",
   "license": "ISC",
-  "type": "commonjs",
   "scripts": {
     "prepare": "husky install",
     "clean": "lerna run clean --parallel",
     "boot": "yarn clean && lerna clean -y && lerna bootstrap",
     "build": "lerna run build --stream",
-    "test": "yarn build && jest",
+    "test": "lerna run test",
     "test:watch": "yarn build && jest --watch"
   },
-  "workspaces": {
-    "packages": [
-      "packages/**"
-    ],
-    "nohoist": [
-      "**/react-native",
-      "**/react-native/**"
-    ]
-  },
+  "workspaces": [
+    "packages/**"
+  ],
   "dependencies": {
     "typescript": "^4.2.4"
   },

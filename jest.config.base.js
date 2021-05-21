@@ -1,3 +1,5 @@
+console.log("jest.config.base.js");
+
 module.exports = {
     roots: ['<rootDir>/src', '<rootDir>/test'],
     transform: {

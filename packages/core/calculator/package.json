@@ -4,7 +4,6 @@
   "author": "Elias Andualem <eandualem@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",
-  "type": "commonjs",
   "scripts": {
     "build": "yarn clean && tsc --build",
     "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo && rimraf coverage",
