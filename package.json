@@ -5,8 +5,9 @@
   "author": "eandualem <eandualem@gmail.com>",
   "homepage": "https://github.com/eandualem/monorepo#readme",
   "license": "ISC",
+  "type": "commonjs",
   "scripts": {
-    "prepare": "husky install && node ./configure-references.js",
+    "prepare": "husky install",
     "clean": "lerna run clean --parallel",
     "boot": "yarn clean && lerna clean -y && lerna bootstrap",
     "build": "lerna run build --stream",
@@ -30,6 +31,7 @@
     "husky": "^6.0.0",
     "jest": "^26.6.3",
     "lerna": "^4.0.0",
+    "rimraf": "^3.0.2",
     "ts-jest": "^26.5.6"
   },
   "repository": {

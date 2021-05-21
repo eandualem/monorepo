@@ -8,10 +8,10 @@ export const mathOperations = {
   multiply: function (x: number, y: number): number {
     return x * y;
   },
-  subtract: function (x: number, y: number): number {
+  divide: function (x: number, y: number): number {
     return x / y;
   },
   exponent: function (x: number, y: number): number {
-    return x ^ y;
+    return x ** y;
   },
 };

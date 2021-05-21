@@ -1,7 +1,16 @@
 {
-  "name": "calculator",
+  "name": "@monorepo/calculator",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Elias Andualem <eandualem@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "src/index.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "yarn clean && tsc --build",
+    "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo && rimraf coverage",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint ./src --ext .ts,.tsx",
+    "watch": "tsc -b -w --preserveWatchOutput"
+  }
 }

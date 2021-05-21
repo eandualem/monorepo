@@ -1,15 +1,28 @@
-import { sum } from "../src/foo";
+import { mathOperations } from "../src";
 
 describe("Test Calculator", () => {
-  it("test addition works", () => {
-    expect(10).toEqual(10);
+  it("sum", () => {
+    let sum = mathOperations["sum"](5, 5);
+    expect(sum).toEqual(10);
   });
 
-  test("basic", () => {
-    expect(sum()).toBe(0);
+  test("sun", () => {
+    let sub = mathOperations.sub(5, 5);
+    expect(sub).toBe(0);
   });
 
-  test("basic again", () => {
-    expect(sum(1, 2)).toBe(3);
+  test("multiply", () => {
+    let mul = mathOperations.multiply(5, 5);
+    expect(mul).toBe(25);
+  });
+
+  test("division", () => {
+    let div = mathOperations.divide(5, 5);
+    expect(div).toBe(1);
+  });
+
+  test("exponent", () => {
+    let exp = mathOperations.exponent(5, 5);
+    expect(exp).toBe(3125);
   });
 });
