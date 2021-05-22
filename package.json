@@ -10,8 +10,7 @@
     "clean": "lerna run clean --parallel",
     "boot": "yarn clean && lerna clean -y && lerna bootstrap",
     "build": "lerna run build --stream",
-    "test": "lerna run test",
-    "test:watch": "yarn build && jest --watch"
+    "test": "lerna run test --stream"
   },
   "workspaces": [
     "packages/**"
