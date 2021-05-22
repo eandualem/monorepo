@@ -1,6 +1,7 @@
 {
-  "name": "@monorepo/super-calc",
+  "name": "@monorepo/message",
   "version": "1.0.0",
+  "private": true,
   "author": "Elias Andualem <eandualem@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",
@@ -12,6 +13,6 @@
     "watch": "tsc -b -w --preserveWatchOutput"
   },
   "dependencies": {
-    "@monorepo/calc": "*"
+    "@monorepo/super-calc": "*"
   }
 }

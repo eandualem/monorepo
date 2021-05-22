@@ -1,0 +1,26 @@
+{
+  "name": "@monorepo/web-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "web app built using webpack. without any ui library",
+  "author": "Elias Andualem <eandualem@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "yarn compile && webpack --env production",
+    "clean": "rimraf dist && rimraf build && rimraf coverage && rimraf tsconfig.tsbuildinfo",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "watch": "tsc -b -w --preserveWatchOutput",
+    "compile": "tsc -build"
+  },
+  "dependencies": {
+    "@monorepo/message": "*"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

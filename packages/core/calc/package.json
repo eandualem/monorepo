@@ -1,6 +1,7 @@
 {
   "name": "@monorepo/calc",
   "version": "1.0.0",
+  "private": true,
   "author": "Elias Andualem <eandualem@gmail.com>",
   "license": "MIT",
   "main": "src/index.ts",
@@ -9,7 +10,6 @@
     "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo && rimraf coverage",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint ./src --ext .ts,.tsx",
     "watch": "tsc -b -w --preserveWatchOutput"
   }
 }
