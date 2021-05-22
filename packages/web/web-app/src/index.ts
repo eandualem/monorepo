@@ -1,4 +1,4 @@
-import { header, message } from "@monorepo/message";
+import { header, message, calcHelper } from "@monorepo/message";
 
 const app = document.getElementById("app");
 
@@ -10,6 +10,13 @@ const h2 = document.createElement("h2");
 h2.textContent = message;
 app?.appendChild(h2);
 
-// const p = document.createElement("p");
-// p.textContent = calcHelper(5, 5, 5, 5, 5, 5);
-// app?.appendChild(p);
+let person = {
+  name: "Elias",
+  age: 26
+}
+
+const p = document.createElement("p");
+p.textContent = calcHelper(5, 5, 5, 5, 5, 5);
+app?.appendChild(p);
+
+

@@ -4,7 +4,8 @@
   "private": true,
   "author": "Elias Andualem <eandualem@gmail.com>",
   "license": "MIT",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "yarn clean && tsc --build",
     "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo && rimraf coverage",
