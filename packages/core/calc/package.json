@@ -7,8 +7,9 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "yarn clean && tsc --build",
     "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo && rimraf coverage",
+    "compile": "tsc --build",
+    "build": "yarn clean && yarn compile",
     "test": "jest",
     "test:watch": "jest --watch",
     "watch": "tsc -b -w --preserveWatchOutput"

@@ -1,6 +1,6 @@
 import { superCalc } from '@monorepo/super-calc';
 
-export const header = "Welcome to this monorepo !.";
+export const header = "Welcome to this monorepo.";
 export const message = "Change this message to see the effect.";
 export const calcHelper = (
   a: number,

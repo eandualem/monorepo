@@ -6,13 +6,13 @@
   "author": "Elias Andualem <eandualem@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack serve",
-    "build": "yarn compile && webpack --env production",
     "clean": "rimraf dist && rimraf build && rimraf coverage && rimraf tsconfig.tsbuildinfo",
+    "compile": "tsc --build",
+    "build": "yarn clean && yarn compile && webpack --env production",
+    "start": "webpack serve",
     "test": "jest",
     "test:watch": "jest --watch",
-    "watch": "tsc -b -w --preserveWatchOutput",
-    "compile": "tsc -build"
+    "watch": "tsc -b -w --preserveWatchOutput"
   },
   "dependencies": {
     "@monorepo/message": "*"
