@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "baseUrl": "./packages",
+        "paths": {
+            "@monorepo/calc/*": [
+                "core/calc/src/*"
+            ],
+            "@monorepo/message/*": [
+                "core/message/src/*"
+            ],
+            "@monorepo/super-calc/*": [
+                "core/super-calc/src/*"
+            ],
+            "@monorepo/web-app/*": [
+                "web/web-app/src/*"
+            ],
+        }
+    },
+    "files": [],
+    "references": [
+        {
+            "path": "packages/core/calc"
+        },
+        {
+            "path": "packages/core/message"
+        },
+        {
+            "path": "packages/core/super-calc"
+        },
+        {
+            "path": "packages/web/web-app"
+        }
+
+    ]
+}

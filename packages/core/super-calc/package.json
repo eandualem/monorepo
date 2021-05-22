@@ -11,7 +11,8 @@
     "build": "yarn clean && yarn compile",
     "test": "jest",
     "test:watch": "jest --watch",
-    "watch": "tsc -b -w --preserveWatchOutput"
+    "watch": "tsc -b -w --preserveWatchOutput",
+    "lint": "eslint ./src --ext .ts,.tsx --fix"
   },
   "dependencies": {
     "@monorepo/calc": "*"

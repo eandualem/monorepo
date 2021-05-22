@@ -12,7 +12,8 @@
     "start": "webpack serve",
     "test": "jest",
     "test:watch": "jest --watch",
-    "watch": "tsc -b -w --preserveWatchOutput"
+    "watch": "tsc -b -w --preserveWatchOutput",
+    "lint": "eslint ./src --ext .ts,.tsx"
   },
   "dependencies": {
     "@monorepo/message": "*"
