@@ -24,6 +24,7 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint", "prettier", "import"],
   rules: {
+    "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off",
     "prettier/prettier": "error",
     "import/extensions": "off",
@@ -31,7 +32,7 @@ module.exports = {
     "no-console": "warn",
     "import/namespace": "off",
     "@typescript-eslint/no-var-requires": "off",
-    "eqeqeq": "error",
+    eqeqeq: "error",
     "import/order": [
       "error",
       {

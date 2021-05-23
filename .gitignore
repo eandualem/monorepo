@@ -32,3 +32,4 @@ dist
 
 # Optional eslint cache
 .eslintcache
+react-app-env.d.ts

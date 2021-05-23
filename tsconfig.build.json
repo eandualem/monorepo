@@ -1,26 +1,26 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "commonjs", // Specify module code generation
+    "moduleResolution": "node", // Resolve modules using Node.js style
     "removeComments": true,
-    "declaration": true,
-    "sourceMap": true,
+    "declaration": true, // Generate corresponding .d.ts file
+    "sourceMap": true, // Generate corrresponding .map file
     "jsx": "react",
 
     /* Strict Type-Checking Options */
-    "strict": true,
+    "strict": true, // Enable all strict type checking options
     "noImplicitAny": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": true, // Report errors on unused locals
+    "noUnusedParameters": true, // Report errors on unused parameters
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "esModuleInterop": true,
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
+    "esModuleInterop": true, // Disables namespace imports (import * as fs from "fs") and enables CJS/AMD/UMD style imports (import fs from "fs")
     // "resolveJsonModule": true,
     // "isolatedModules": true,
     // "noEmit": true,
