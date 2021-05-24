@@ -11,12 +11,22 @@
     "boot": "lerna clean -y && lerna bootstrap",
     "build": "lerna run build --stream",
     "start": "lerna run start --stream",
+    "lint": "lerna run lint --stream --parallel",
     "test": "lerna run test --stream",
-    "lint": "lerna run lint --stream --parallel"
+    "test:check": "yarn clean && yarn boot && yarn build && yarn test",
+    "test:changed": "lerna run --since origin/master --include-dependents test",
+    "test:update": "lerna run test -- -u",
+    "test:update:changed": "lerna run --since origin/master --include-dependents test -- -u"
   },
-  "workspaces": [
-    "packages/**"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**"
+    ]
+  },
   "dependencies": {
     "typescript": "^4.2.4"
   },
