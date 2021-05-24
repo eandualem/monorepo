@@ -1,19 +1,27 @@
-import renderer from "react-test-renderer";
+import { create, act } from "react-test-renderer";
 import Link from "../../src/components/Link";
 
 test("Link changes the class when hovered", () => {
-  const component = renderer.create(<Link page="http://www.facebook.com">Facebook</Link>);
+  // render the component
+  let component;
+  act(() => {
+    component = create(<Link page="http://www.facebook.com">Facebook</Link>);
+  });
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 
   // manually trigger the callback
-  tree.props.onMouseEnter();
+  act(() => {
+    tree.props.onMouseEnter();
+  });
   // re-rendering
   tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 
   // manually trigger the callback
-  tree.props.onMouseLeave();
+  act(() => {
+    tree.props.onMouseLeave();
+  });
   // re-rendering
   tree = component.toJSON();
   expect(tree).toMatchSnapshot();

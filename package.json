@@ -8,7 +8,7 @@
   "scripts": {
     "prepare": "husky install",
     "clean": "lerna run clean --parallel",
-    "boot": "yarn clean && lerna clean -y && lerna bootstrap",
+    "boot": "lerna clean -y && lerna bootstrap",
     "build": "lerna run build --stream",
     "start": "lerna run start --stream",
     "test": "lerna run test --stream",
@@ -25,6 +25,7 @@
     "@testing-library/react": "^11.2.7",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "^26.0.23",
+    "@types/react-test-renderer": "^17.0.1",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
     "enzyme-adapter-react-16": "^1.15.6",

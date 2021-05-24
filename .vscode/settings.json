@@ -4,6 +4,7 @@
     "Parens",
     "eandualem",
     "eqeqeq",
+    "nohoist",
     "tsbuildinfo"
   ]
 }
