@@ -31,7 +31,7 @@ module.exports = {
     "import/no-unresolved": "off",
     "no-console": "warn",
     "import/namespace": "off",
-    "@typescript-eslint/no-var-requires": "error",
+    "@typescript-eslint/no-var-requires": "off",
     eqeqeq: "error",
     "import/order": [
       "error",

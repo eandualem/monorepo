@@ -15,6 +15,9 @@
             "@monorepo/web-app/*": [
                 "web/web-app/src/*"
             ],
+            "@monorepo/app/*": [
+                "mobile/app/src/*"
+            ],
         }
     },
     "files": [],
@@ -30,7 +33,9 @@
         },
         {
             "path": "packages/web/web-app"
+        },
+        {
+            "path": "packages/mobile/app"
         }
-
     ]
 }
